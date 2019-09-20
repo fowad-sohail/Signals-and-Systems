@@ -16,7 +16,7 @@ t = -5:Ts:5; % support of signal
 y = ramp(t, 1, -3);
 plot(t,y);
 axis([-5 5 -1 5]);
-title('Ramp function');
+title('Problem 2');
 xlabel('time (seconds)');
 ylabel('y(t)');
 grid

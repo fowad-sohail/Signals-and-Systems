@@ -1,5 +1,5 @@
 %*************************************************************
-% Problem 2
+% Ramp function
 % Function to generate ramp step
 % Input : time interval, signal advance/delay factor
 % Output: Unit step response
