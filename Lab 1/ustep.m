@@ -1,9 +1,11 @@
 %*************************************************************
+% Fowad Sohail
 % Unit step function
 % Function to generate ramp step
 % Input : time interval, signal advance/delay factor
 % Output: Unit step response
 %**************************************************************
+
 function y = ustep(t, ad)
 % generation of unit step
 % t: time
