@@ -1,18 +1,16 @@
 %*************************************************************
 % Fowad Sohail
-% Lab 2: Signal Generation Problem 1
+% Lab 2: Signal Generation Problem 2
 % Reference: Signals and Systems with Matlab, Chaparro Luis F.
 %**************************************************************
 
-clf
-t = -25:0.01:25;
-u1 = ustep(t, 20);
-u2 = ustep(t, -20);
-y = u1 -u2;
-figure(1)
-plot(t, y);
-title('Signal Generation Problem 1');
+t = 0:0.01:30;
+x = square(t*(pi/5));
+
+figure(2);
+plot(t,x)
+title('Signal Generation Problem 2');
 xlabel('Time Domain');
 ylabel('Amplitude');
-axis([-25 25 -1 2]);
+axis([0 30 -1.5 1.5])
 grid
