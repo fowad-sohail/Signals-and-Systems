@@ -9,8 +9,10 @@ x = 1 * cos(2*t+(t.^2)/4);
 
 figure(4);
 plot(t,x)
-title('Signal Generation Problem 3');
+title('Chirps Problem 1');
 xlabel('Time Domain');
 ylabel('Amplitude');
 axis([0 40 -2 2])
 grid
+
+soundsc(x, 2000)
