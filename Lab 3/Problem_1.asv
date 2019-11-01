@@ -16,7 +16,7 @@ disp(zeros)
 disp(poles)
 
 % Part b
-plot(real(zeros),imag(zeros),'o',real(poles),imag(poles),'x')
+plot(real(numerator), realdenominator);
 grid
 title('Plot of Zeros and Poles')
 
