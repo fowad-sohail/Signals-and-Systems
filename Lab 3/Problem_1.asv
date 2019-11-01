@@ -7,7 +7,9 @@
 
 % Part a
 numerator = [1 5 6];
+NUM = s^2 + 5s + 6;
 denominator = [1 11 60 50 0];
+DEN = s^4 + 11s^11
 
 zeros = roots(numerator);
 poles = roots(denominator);
@@ -15,8 +17,15 @@ poles = roots(denominator);
 disp(zeros)
 disp(poles)
 
-% Part b
-plot(real(numerator), realdenominator);
+figure(1)
+plot(real(zeros),imag(zeros),'o',real(poles),imag(poles),'x')
 grid
 title('Plot of Zeros and Poles')
 
+
+% Part b
+figure(2)
+h = ilaplace(numerator/denominator);
+
+% Part c
+% Initial value theorem is confirmed by the plot and 
